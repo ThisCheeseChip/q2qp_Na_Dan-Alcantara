@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Oswald:wght@500&family=Roboto:wght@700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Oswald:wght@500&family=Roboto:wght@700&family=Slabo+27px&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&family=Oswald:wght@500&family=Permanent+Marker&family=Roboto:wght@700&family=Rowdies:wght@300&family=Slabo+27px&family=Young+Serif&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,41 +9,59 @@
 
 /**NAVBAR START**/
 nav {
-    width: 100vw;
+    width: 100%;
     height: 10vh;
 
     background-color: #91B2D9;
     display: flex;
     align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+
+#filler_nav {
+    height: 10vh;
+    width: 100%;
 }
 
 #logo {
-    height: 50px;
-    width: 50px;
+    height: 3vw;
+    width: 3vw;
 
-    margin-left: 1.25vw;
+    margin-left: 1.5vw;
 
-    background-image: url(../media/favicon.png);
+    background: url(../media/favicon.png);
     background-color: blue;
     border-radius: 100px;
 }
 
 header {
-    margin-left: 0.75vw;
+    margin-left: 1vw;
 }
 
 header h1 {
-    
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
 }
 
 header p {
-
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Permanent Marker', 'cursive';
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rowdies', sans-serif;
+    font-family: 'Slabo 27px', serif;
+    font-family: 'Young Serif', serif;
 }
  
 /*button transition START*/
 
 .navigation {
-    margin-left: 47.5vw;
+    margin-left: 40.75vw;
 }
 
 .button a {
@@ -64,6 +86,15 @@ a {
     text-decoration: none;
     color: black;
     padding: 5px;
+
+    font-size: 17px;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Slabo 27px', serif;
+    font-family: 'Young Serif', serif;
 }
 
 .dropdown {
@@ -79,7 +110,7 @@ a {
 
     background-color: #f9f9f9;
 
-    min-width: 200px;
+    min-width: 295px;
     min-height: 150px;
 
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -127,3 +158,61 @@ a {
 /*button transitions END*/
 
 /**NAVBAR END**/
+
+/*Slogan START*/
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set the desired height */
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    transition: 0.75s;
+    background-color: rgba(99, 96, 96, 0.6);
+    border-radius: 15px;
+    font-size: 32px;
+    padding: 50px;
+}
+
+.video-container:hover .quote {
+    background-color: white;
+    color: black;
+    transition: 0.75s;
+    
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.main_content {
+    width: 100%;
+    height: 100vh;
+
+    position: absolute;
+    background-image: url(../media/background_image.jpg);
+}
+
+#organization_background {
+    display: flex;
+    justify-content: center;
+
+    height: 3vh;
+    width: 100%;
+}
